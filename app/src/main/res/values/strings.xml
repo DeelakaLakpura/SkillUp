@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SkillUp</string>
+    <string name="title_activity_lectures_dashboard">LecturesDashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string-array name="module_names">
+        <item>PUSL2023</item>
+        <item>PUSL2022</item>
+        <item>PUSL2021</item>
+        <item>PUSL2020</item>
+    </string-array>
+</resources>

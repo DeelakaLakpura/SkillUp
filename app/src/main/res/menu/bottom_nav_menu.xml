@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_sticky_note_2_24"
+        android:title="Notes" />
+
+
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/baseline_table_view_24"
+        android:title="Time Table" />
+
+
+
+
+</menu>

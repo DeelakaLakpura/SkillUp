@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Students.StudentLoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:padding="10dp"
+            android:backgroundTint="@color/main_color_1"
+            android:background="@drawable/blue_bg">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGIN"
+                    android:fontFamily="@font/boldtext"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="45sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Unlock Your Learning Potential with Our LMS: Log In and Level Up!"
+                    android:fontFamily="@font/r_l"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="65dp"
+            android:fontFamily="@font/poppins_b"
+            android:text="Login To SkillUp"
+            android:textAlignment="center"
+            android:textColor="@color/main_color"
+            android:textSize="45px" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="16.7dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/logphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img2"
+                android:background="@android:color/transparent"
+                android:hint="Enter Your Email Address"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/boldtext"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:textColorHint="@color/gray"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="13sp" />
+
+            <!-- ICON -->
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/baseline_email_24"
+                app:tint="@color/main_color_1" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="16.7dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/logpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img3"
+                android:background="@android:color/transparent"
+                android:hint="Enter Password"
+android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:paddingLeft="17dp"
+                android:fontFamily="@font/boldtext"
+                android:textColorHint="@color/gray"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="13sp" />
+
+            <!-- ICON -->
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/baseline_lock_24"
+                app:tint="@color/main_color_1" />
+
+
+            <ImageView
+                android:id="@+id/show_pass_img"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/baseline_visibility_off_24"
+                app:tint="@color/main_color_1" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btnlog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="10.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_fill__rounded_color"
+            android:fontFamily="@font/r_b"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Login "
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+
+            />
+
+        <TextView
+            android:id="@+id/forg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="62dp"
+            android:fontFamily="@font/boldtext"
+            android:gravity="end"
+            android:text="Forgot password?"
+            android:textColor="@color/main_color_1"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/r_b"
+            android:text="I don't have an account "
+            android:textColor="@color/main_color_1"
+            android:textSize="13sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

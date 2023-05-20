@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#F6F5F5"
+    tools:context=".Students.StudentDashboardActivity">
+
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:background="@drawable/b_ground"
+        android:layout_height="165dp"
+        app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/displayuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text=""
+        android:layout_marginBottom="36dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_20"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imguser"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/power"
+        android:tint="#DAD7D7"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="20dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Short View"
+                android:textColor="@color/main_color"
+                android:textSize="14sp"
+
+                android:elevation="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/bus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textview">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/students" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Students"
+                    android:fontFamily="@font/poppins_b"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/main_color_2"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/std_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_b"
+                    android:layout_marginTop="3dp"
+                    android:text="0"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/textview">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/conference" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Professors"
+                    android:fontFamily="@font/poppins_b"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/main_color_2"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/leccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_b"
+                    android:layout_marginTop="3dp"
+                    android:text="0"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_dashboard"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="@dimen/horizontal_dashboard"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/Cat_notes"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/horizontal_card"
+                android:layout_marginEnd="@dimen/horizontal_card"
+                android:layout_marginRight="@dimen/horizontal_card"
+                android:layout_marginBottom="@dimen/horizontal_card"
+                android:layout_weight="1"
+                android:elevation="28dp"
+
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="2dp"
+
+
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/lecnotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:padding="7dp"
+                        android:src="@drawable/note" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_card"
+                        android:layout_marginRight="@dimen/normalPadding"
+
+                        android:fontFamily="@font/poppins_b"
+                        android:text="Lectures\nNotes"
+                        android:textColor="@color/main_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+                        android:layout_marginRight="@dimen/normalPadding"
+                        android:layout_marginBottom="@dimen/normalPadding"
+                        android:fontFamily="@font/it"
+                        android:text="View More"
+                        android:textColor="@color/gray"
+                        android:textSize="11sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/horizontal_card"
+                android:layout_marginTop="@dimen/horizontal_card"
+                android:layout_marginBottom="@dimen/horizontal_card"
+
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/lec_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:src="@drawable/robot" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_card"
+                        android:layout_marginRight="@dimen/normalPadding"
+                        android:fontFamily="@font/poppins_b"
+                        android:text="AI Learning\nBot"
+                        android:textColor="@color/main_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+                        android:layout_marginRight="@dimen/normalPadding"
+                        android:layout_marginBottom="@dimen/normalPadding"
+                        android:fontFamily="@font/it"
+                        android:text="View More"
+                        android:textColor="@color/gray"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_dashboard"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/horizontal_dashboard"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/timetable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/horizontal_card"
+                android:layout_marginEnd="@dimen/horizontal_card"
+                android:layout_marginRight="@dimen/horizontal_card"
+                android:layout_marginBottom="@dimen/horizontal_card"
+                android:layout_weight="1"
+                android:elevation="28dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="2dp"
+
+
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/busdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/im"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:padding="7dp"
+                        android:src="@drawable/timetable" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_card"
+
+                        android:layout_marginRight="@dimen/normalPadding"
+
+
+                        android:fontFamily="@font/poppins_b"
+                        android:text="Lectures\nTime Table"
+                        android:textColor="@color/main_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+
+                        android:layout_marginRight="@dimen/normalPadding"
+                        android:layout_marginBottom="@dimen/normalPadding"
+
+                        android:fontFamily="@font/it"
+
+                        android:text="View More"
+                        android:textColor="@color/gray"
+                        android:textSize="11sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/exam_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/horizontal_card"
+                android:layout_marginTop="@dimen/horizontal_card"
+                android:layout_marginBottom="@dimen/horizontal_card"
+
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+
+                app:cardCornerRadius="@dimen/card_radius"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/exam" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_card"
+                        android:layout_marginRight="@dimen/normalPadding"
+                        android:fontFamily="@font/poppins_b"
+                        android:text="Exams\nTime Table"
+                        android:textColor="@color/main_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/normalPadding"
+                        android:layout_marginTop="@dimen/top_text_subtitle_card"
+                        android:layout_marginRight="@dimen/normalPadding"
+                        android:layout_marginBottom="@dimen/normalPadding"
+                        android:fontFamily="@font/it"
+                        android:text="View More"
+                        android:textColor="@color/gray"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

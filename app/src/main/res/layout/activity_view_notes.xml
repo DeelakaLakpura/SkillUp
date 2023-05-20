@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Students.ViewNotesActivity">
+
+    <LinearLayout
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@color/main_color_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/boldtext"
+            android:gravity="center"
+            android:text="Heding"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+          />
+
+
+        <TextView
+            android:id="@+id/txt_module"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/r_l"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="Module Name"
+            android:textColor="@color/white"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/speech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:autoSizeTextType="uniform"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/r_l"
+            android:text="note"
+            android:textSize="19sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/speech"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Listen to  Note"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <es.claucookie.miniequalizerlibrary.EqualizerView
+        android:id="@+id/imgr"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:animDuration="3500"
+        android:visibility="invisible"
+        app:foregroundColor="@color/main_color_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/speech"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+
+    <ImageButton
+        android:id="@+id/puse"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:src="@drawable/baseline_pause_circle_filled_24"
+        android:visibility="invisible"
+        app:cardCornerRadius="180dp"
+        app:layout_constraintBottom_toBottomOf="@+id/speech"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/speech"
+        app:layout_constraintTop_toTopOf="@+id/speech"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

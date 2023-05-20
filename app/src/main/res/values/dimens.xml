@@ -1,0 +1,88 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+
+    <dimen name="app_bar_height">180dp</dimen>
+
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="headerTextSize">28sp</dimen>
+
+    <dimen name="headerMoreTextSize">18sp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="frutorial_title">15sp</dimen>
+    <dimen name="card_maincourse_elevation">2dp</dimen>
+    <dimen name="card_image_elevation">4dp</dimen>
+    <dimen name="card_itemcourse_elevation">2dp</dimen>
+    <dimen name="card_item_tutorial_elevation">5dp</dimen>
+
+
+    <!--    Dashboard-->
+    <dimen name="normalPadding">20dp</dimen>
+    <dimen name="staggedmarginbottom">21dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="horizontal_dashboard">32dp</dimen>
+    <dimen name="img_card_height">120dp</dimen>
+    <dimen name="drawable_left">5dp</dimen>
+    <dimen name="card_course_dashboard_elevation">.2dp</dimen>
+
+    <dimen name="vertical_search">10dp</dimen>
+    <dimen name="card_radius">14dp</dimen>
+    <dimen name="horizontal_card">8dp</dimen>
+
+    <dimen name="top_text_card">14dp</dimen>
+    <dimen name="top_text_subtitle_card">4dp</dimen>
+    <dimen name="d_number_courses">11sp</dimen>
+
+    <dimen name="viewpager_next_item_visible">26dp</dimen>
+    <dimen name="viewpager_current_item_horizontal_margin">42dp</dimen>
+    <dimen name="viewpager_next_item_visible_testing">29dp</dimen>
+
+    <dimen name="viewpager_current_item_horizontal_margin_testing">60dp</dimen>
+
+    <item name="gnt_medium_template_bottom_weight" format="float" type="dimen">0.4</item>
+    <item name="gnt_text_row_weight" format="float" type="dimen">0.25</item>
+    <item name="gnt_media_view_weight" format="float" type="dimen">1.0</item>
+    <item name="gnt_medium_template_top_weight" format="float" type="dimen">0.2</item>
+    <dimen name="gnt_default_margin">10dp</dimen>
+    <dimen name="gnt_text_size_small">12sp</dimen>
+    <dimen name="gnt_text_size_large">15sp</dimen>
+    <dimen name="gnt_ad_indicator_width">25dp</dimen>
+    <dimen name="gnt_ad_indicator_height">20dp</dimen>
+    <dimen name="gnt_ad_indicator_bar_height">30dp</dimen>
+    <dimen name="gnt_ad_indicator_top_margin">0dp</dimen>
+    <dimen name="gnt_ad_indicator_bottom_margin">10dp</dimen>
+    <dimen name="gnt_ad_indicator_text_size">10sp</dimen>
+    <dimen name="gnt_small_cta_button_height">30dp</dimen>
+    <dimen name="gnt_medium_cta_button_height">50dp</dimen>
+    <dimen name="gnt_no_margin">0dp</dimen>
+    <dimen name="gnt_no_size">0dp</dimen>
+
+    <dimen name="margin_dp">15dp</dimen>
+    <dimen name="progress_h_w">40dp</dimen>
+    <dimen name="circle_progress">35dp</dimen>
+    <dimen name="default_text_size">16sp</dimen>
+
+    <dimen name="img_height">155dp</dimen>
+
+    <dimen name="small_text">10sp</dimen>
+    <dimen name="mid_text">15sp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="margin_7dp">7dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="textsize_34">34sp</dimen>
+    <dimen name="textsize_18">18sp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="txtsize_22">22sp</dimen>
+    <dimen name="txt_size_16">16sp</dimen>
+    <dimen name="txtsize_18">18sp</dimen>
+    <dimen name="txt_size_20">20sp</dimen>
+    <dimen name="text_12sp">12sp</dimen>
+</resources>
