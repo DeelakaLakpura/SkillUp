@@ -33,11 +33,8 @@ public class StudentDashboardActivity extends AppCompatActivity {
     private DatabaseReference reference;
     private String UserID;
     private TextView count1,count2;
-
     private ImageView img;
-
     private  String greeting ;
-
     private CardView card1,card2,card3,card4;
 
     String Fullname;
@@ -121,13 +118,7 @@ public class StudentDashboardActivity extends AppCompatActivity {
 
                         greeting = "~ᴳᵒᵒᵈ ᴺⁱᵍʰᵗ~";
                     }
-
-
-
                     fullnameText.setText("Hi! " + Fullname + "\n" + greeting);
-
-
-
 
                 }
                 img.setOnClickListener(new View.OnClickListener() {

@@ -15,10 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkillUp"
         tools:targetApi="31">
+
         <activity
             android:name=".Students.WebViewActivity"
             android:screenOrientation="landscape"
             android:exported="false" />
+
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
@@ -90,5 +92,10 @@
             android:hardwareAccelerated="false"
             android:screenOrientation="portrait" />
     </application>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
 
 </manifest>

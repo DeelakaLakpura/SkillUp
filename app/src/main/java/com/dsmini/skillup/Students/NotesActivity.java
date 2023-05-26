@@ -1,11 +1,15 @@
 package com.dsmini.skillup.Students;
 
+import static java.security.AccessController.getContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -18,6 +22,8 @@ import com.dsmini.skillup.Students.models.notemodel;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Locale;
 
 public class NotesActivity extends AppCompatActivity {
 
@@ -120,6 +126,7 @@ public class NotesActivity extends AppCompatActivity {
         super.onStart();
         adapter.startListening();
     }
+
 
     @Override
     public void onBackPressed() {

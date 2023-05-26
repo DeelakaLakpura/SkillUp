@@ -2,7 +2,9 @@ package com.dsmini.skillup.Students;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
@@ -55,6 +57,8 @@ public class ViewNotesActivity extends AppCompatActivity {
             }
 
         });
+
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,5 +121,7 @@ public class ViewNotesActivity extends AppCompatActivity {
         Intent intent = new Intent(ViewNotesActivity.this,NotesActivity.class);
         startActivity(intent);
     }
+
+
 
 }

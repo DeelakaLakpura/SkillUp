@@ -50,8 +50,9 @@ public class IntroActivity extends AppCompatActivity {
         //Data
         final List<ScreenItem> mList = new ArrayList<>();
         mList.add(new ScreenItem("Important Notes", "Transform your lecture notes into a walk in\nthe park with SkillUp!", R.drawable.img01));
-        mList.add(new ScreenItem("Important Videos", "Unlock your learning potential with Skillup,\nWatch, Learn, Succeed!", R.drawable.img02));
         mList.add(new ScreenItem("Important Dates", "Stay ahead of your academic game with our date tracker,\nnever miss an exam or assignment again!", R.drawable.img03));
+        mList.add(new ScreenItem("AI Learning Bot", "Unlocking Knowledge, Empowering Minds: Your\nAI Education Companion!", R.drawable.img02));
+
 
         //Setup viewPager
         screenPager = findViewById(R.id.screen_viewpager);
